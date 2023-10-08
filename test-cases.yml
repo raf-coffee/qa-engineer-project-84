@@ -147,14 +147,29 @@
     Все добавленные товары должны исчезнуть из корзины
 
 - summary: |
-    Проверка перехода на  "Продолжить покупки"
+    Проверка перехода обратно в каталог при нажатии "Продолжить покупки"
   requirement: |
     При правильном выполнении действий должна открыться страница магазина без обновления страницы
   prerequisites: |
-    Открыта корзина https://hexlet-products-store.vercel.app/cart, выбран русский язык
+    Открыта корзина https://hexlet-products-store.vercel.app/cart
   test-data: |
-    Браузер Google Chrome, Mozilla FireFox, Opera, Yandex, Microsoft Edge
+    no data
   steps:
     - Нажать на кнопку "Продолжить покупки"
   expected-result: |
-    Открылась страница магазина без обновления
+    Переход обратно в каталог
+
+- summary: |
+    Проверка скорости работы сайта
+  requirement: |
+    Веб-сайт должен быть разработан с учетом удобства использования и оптимизирован для скорости работы.
+  prerequisites: |
+    Google Chrome
+    Открыта страница https://hexlet-products-store.vercel.app/
+  test-data: |
+    no data
+  steps:
+    - Перейти в DevTools
+    - Запустить Lighthouse
+  expected-result: |
+    По всем категориям исследования должно быть набрано больше 80 баллов.
