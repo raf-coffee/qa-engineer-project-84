@@ -1,0 +1,41 @@
+---
+- summary: |
+    Проверка  поиска товара по категории.
+  environment: |
+    Google Chrome 117.0.5938.149 (Официальная сборка), (64 бит)
+    ОС Linux Ubuntu 20.04.6 LTS
+  steps-to-reproduce: |
+    1. Зайти на страницу https://hexlet-products-store.vercel.app/
+    2. В поле "Search" ввести "smartphones"
+  expected-result: |
+    Будут найдены товары из категории "smartphones"
+  actual-result: |
+    Товары не найдены. Выводится сообщение "Nothing found!"
+
+- summary: |
+    Проверка возможности сброса фильтрации товара по категории.
+  environment: |
+    Google Chrome 117.0.5938.149 (Официальная сборка), (64 бит)
+    ОС Linux Ubuntu 20.04.6 LTS
+  steps-to-reproduce: |
+    1. Зайти на страницу https://hexlet-products-store.vercel.app/
+    2. Нажать на меню "Category"
+    3. Выбрать любую категорию
+  expected-result: |
+    Выбранную категорию можно убрать.
+  actual-result: |
+    Нет возможности убрать выбранную категорию товаров.
+
+- summary: |
+    Проверка корректности смены языка
+  environment: |
+    Google Chrome 117.0.5938.149 (Официальная сборка), (64 бит)
+    ОС Linux Ubuntu 20.04.6 LTS
+  steps-to-reproduce: |
+    1. Зайти на страницу https://hexlet-products-store.vercel.app/
+    2. Нажать на меню "Language"
+    3. Выбрать язык "Русский"
+  expected-result: |
+    Язык интерфейса сайта и описания товаров должен поменяться на русский. Валюта должна смениться на рубли. 
+  actual-result: |
+    Описание товара и валюта не изменились.
