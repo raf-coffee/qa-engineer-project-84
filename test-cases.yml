@@ -173,3 +173,48 @@
     - Запустить Lighthouse
   expected-result: |
     По всем категориям исследования должно быть набрано больше 80 баллов.
+
+- summary: |
+    Проверка скорости работы сайта
+  requirement: |
+    Веб-сайт должен быть разработан с учетом удобства использования и оптимизирован для скорости работы.
+  prerequisites: |
+    Google Chrome
+    Открыта страница https://hexlet-products-store.vercel.app/
+  test-data: |
+    no data
+  steps:
+    - Перейти в DevTools
+    - Запустить Lighthouse
+  expected-result: |
+    По всем категориям исследования должно быть набрано больше 80 баллов.
+
+- summary: |
+    Проверка доступности сайта на различных устройствах
+  requirement: |
+    Сайт должен быть доступен на различных устройствах
+  prerequisites: |
+    Google Chrome
+    Открыта страница https://hexlet-products-store.vercel.app/
+  test-data: |
+    no data
+  steps:
+    - Перейти в DevTools
+    - Нажать на иконку смены устройства
+    - Выбрать различные устройства
+  expected-result: |
+    Сайт должен отображаться корректно на всех устройствах
+
+- summary: |
+    Проверка корректности смены языка
+  requirement: |
+    При смене языка должна меняться валюта и язык описания товара
+  prerequisites: |
+    Открыта страница https://hexlet-products-store.vercel.app/
+  test-data: |
+    no data
+  steps:
+    - Нажать на кнопку "Language"
+    - Выбрать язык "Русский"
+  expected-result: |
+    Язык интерфейса сайта и описания товаров должен поменяться на русский. Валюта должна смениться на рубли.
