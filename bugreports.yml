@@ -10,7 +10,7 @@
   expected-result: |
     Будут найдены товары, содержащие в названии слово "sofa"
   actual-result: |
-    Товары не найдены. Выводится сообщение "Nothing found!" (см. файл screen1.png)
+    Товары не найдены. Выводится сообщение "Nothing found!" (см. файл screenshots/screen1.png)
 
 - summary: |
     Проверка  поиска товара по категории.
@@ -23,7 +23,7 @@
   expected-result: |
     Будут найдены товары из категории "smartphones"
   actual-result: |
-    Товары не найдены. Выводится сообщение "Nothing found!"
+    Товары не найдены. Выводится сообщение "Nothing found!" (см. файл screenshots/screen2.png)
 
 - summary: |
     Проверка возможности сброса фильтрации товара по категории.
