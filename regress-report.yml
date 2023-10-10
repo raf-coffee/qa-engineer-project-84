@@ -108,3 +108,17 @@ bugreports:
       Язык интерфейса сайта и описания товаров должен поменяться на русский. Валюта должна смениться на рубли. 
     actual-result: |
       Описание товара и валюта не изменились (см. файл screenshots/screen9.png)
+  
+  - summary: |
+      В меню "Category" отсутствует надпись Clear на месте элемента списка, отвечающего за сброс категории
+    environment: |
+      Google Chrome 117.0.5938.149 (Официальная сборка), (64 бит)
+      ОС Linux Ubuntu 20.04.6 LTS
+    steps-to-reproduce: |
+      1. Зайти на страницу https://hexlet-products-store.vercel.app/
+      2. Нажать на меню "Category"
+      3. Выбрать любую категорию
+    expected-result: |
+      В меню "Category" есть кнопка сброса выбранной категории
+    actual-result: |
+      Строка без подписи (см. файл screenshots/screen10.png)
